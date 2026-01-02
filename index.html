@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arknights Community Wiki</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with Search -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <span class="server-status">
+                        <i class="fas fa-circle status-online"></i> 
+                        Game Server: Online
+                    </span>
+                    <div class="header-links">
+                        <a href="#"><i class="fas fa-comments"></i> Forums</a>
+                        <a href="#"><i class="fas fa-calendar-alt"></i> Events</a>
+                        <a href="#"><i class="fas fa-question-circle"></i> FAQ</a>
+                        <a href="#" class="discord-link">
+                            <i class="fab fa-discord"></i> Join Discord
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-content">
+                    <div class="logo-section">
+                        <div class="logo-container">
+                            <img src="https://i.imgur.com/JSf9J2n.png" alt="Arknights Logo" class="logo">
+                            <div class="logo-text">
+                                <h1 class="site-title">Arknights Wiki</h1>
+                                <span class="site-subtitle">Community Edition</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="search-section">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search operators, guides, or strategies...">
+                            <button class="search-btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="quick-search-tags">
+                            <span class="tag">#Texas</span>
+                            <span class="tag">#Guide</span>
+                            <span class="tag">#TierList</span>
+                            <span class="tag">#Event</span>
+                        </div>
+                    </div>
+                    
+                    <div class="user-section">
+                        <button class="btn-user">
+                            <i class="fas fa-user-circle"></i>
+                            <span>Login / Register</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="tier-list.html"><i class="fas fa-chart-line"></i> Investment Tier List</a></li>
+                    <li><a href="guides.html"><i class="fas fa-book-open"></i> Guides</a></li>
+                    <li class="has-dropdown">
+                        <a href="operators.html"><i class="fas fa-users"></i> 6★ Operators <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-column">
+                                <h4>Filter by Role</h4>
+                                <a href="operators.html?role=guard"><i class="fas fa-sword"></i> Guards</a>
+                                <a href="operators.html?role=caster"><i class="fas fa-hat-wizard"></i> Casters</a>
+                                <a href="operators.html?role=sniper"><i class="fas fa-crosshairs"></i> Snipers</a>
+                                <a href="operators.html?role=defender"><i class="fas fa-shield-alt"></i> Defenders</a>
+                                <a href="operators.html?role=medic"><i class="fas fa-heartbeat"></i> Medics</a>
+                                <a href="operators.html?role=supporter"><i class="fas fa-hands-helping"></i> Supporters</a>
+                                <a href="operators.html?role=specialist"><i class="fas fa-user-ninja"></i> Specialists</a>
+                                <a href="operators.html?role=vanguard"><i class="fas fa-forward"></i> Vanguards</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Featured Operators</h4>
+                                <a href="operator-silverash.html" class="featured-operator-link">
+                                    <img src="https://i.imgur.com/lLrUEsB.png" alt="SilverAsh">
+                                    <span>SilverAsh</span>
+                                </a>
+                                <a href="operator-exusiai.html" class="featured-operator-link">
+                                    <img src="https://i.imgur.com/lU4IgHh.png" alt="Exusiai">
+                                    <span>Exusiai</span>
+                                </a>
+                                <a href="operator-eyjafjalla.html" class="featured-operator-link">
+                                    <img src="https://i.imgur.com/kR9KIDj.png" alt="Eyjafjalla">
+                                    <span>Eyjafjalla</span>
+                                </a>
+                                <div class="dropdown-view-all">
+                                    <a href="operators.html" class="btn-view-all">View All Operators →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#"><i class="fas fa-newspaper"></i> News</a></li>
+                    <li><a href="#"><i class="fas fa-calculator"></i> Tools</a></li>
+                    <li><a href="#"><i class="fas fa-database"></i> Database</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content with Sidebar -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Left Sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">
+                            <i class="fas fa-fire"></i> Trending Now
+                        </h3>
+                        <ul class="trending-list">
+                            <li>
+                                <a href="#">
+                                    <span class="trending-rank">1</span>
+                                    <div class="trending-content">
+                                        <h4>Młynar Analysis</h4>
+                                        <p>Is he worth pulling?</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="trending-rank">2</span>
+                                    <div class="trending-content">
+                                        <h4>IS#3 Guide</h4>
+                                        <p>Integrated Strategies #3</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="trending-rank">3</span>
+                                    <div class="trending-content">
+                                        <h4>New Event</h4>
+                                        <p>Il Siracusano rewards</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="trending-rank">4</span>
+                                    <div class="trending-content">
+                                        <h4>Module Guide</h4>
+                                        <p>Best modules to upgrade</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">
+                            <i class="fas fa-clock"></i> Recent Updates
+                        </h3>
+                        <div class="updates-list">
+                            <div class="update-item">
+                                <div class="update-date">Today</div>
+                                <h4>Tier List Updated</h4>
+                                <p>Added new operators to investment tier list</p>
+                            </div>
+                            <div class="update-item">
+                                <div class="update-date">2 days ago</div>
+                                <h4>New Guide Added</h4>
+                                <p>Annihilation 9 auto-deploy guide</p>
+                            </div>
+                            <div class="update-item">
+                                <div class="update-date">1 week ago</div>
+                                <h4>Operator Database</h4>
+                                <p>Added stats for Texas the Omertosa</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-widget discord-widget">
+                        <h3 class="widget-title">
+                            <i class="fab fa-discord"></i> Community Discord
+                        </h3>
+                        <p>Join our active community of 50,000+ Doctors!</p>
+                        <a href="#" class="btn-discord">
+                            <i class="fab fa-discord"></i> Join Discord Server
+                        </a>
+                        <div class="discord-stats">
+                            <div class="stat">
+                                <span class="stat-value">50,000+</span>
+                                <span class="stat-label">Members</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">24/7</span>
+                                <span class="stat-label">Support</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">Active</span>
+                                <span class="stat-label">Community</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                
+                <!-- Main Content Area -->
+                <div class="main-area">
+                    <!-- Hero Banner -->
+                    <section class="hero-banner">
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <h2 class="hero-title">Master the Tactics, Lead Your Operators</h2>
+                                <p class="hero-subtitle">Comprehensive guides, tier lists, and operator database for Arknights players</p>
+                                <div class="hero-buttons">
+                                    <a href="operators.html" class="btn-hero">
+                                        <i class="fas fa-search"></i> Operator Database
+                                    </a>
+                                    <a href="tier-list.html" class="btn-hero btn-secondary">
+                                        <i class="fas fa-chart-bar"></i> Investment Guide
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="hero-image">
+                                <img src="https://i.imgur.com/7YH0ry2.png" alt="Arknights Operators">
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Quick Stats -->
+                    <section class="quick-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">200+</span>
+                                <span class="stat-label">Operators</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Guides</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">Updated</span>
+                                <span class="stat-label">Daily</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">10,000+</span>
+                                <span class="stat-label">Discussions</span>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Featured Content -->
+                    <section class="featured-section">
+                        <div class="section-header">
+                            <h2 class="section-title">
+                                <i class="fas fa-star"></i> Featured Content
+                            </h2>
+                            <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        
+                        <div class="featured-grid">
+                            <!-- Tier List Preview -->
+                            <div class="featured-card featured-tierlist">
+                                <div class="card-header">
+                                    <h3 class="card-title">Investment Tier List</h3>
+                                    <span class="card-badge">Updated Today</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>Find out which operators are worth investing your resources in for maximum efficiency.</p>
+                                    <div class="tier-preview">
+                                        <div class="tier-row tier-s">
+                                            <span class="tier-label">S Tier</span>
+                                            <div class="tier-operators">
+                                                <img src="https://i.imgur.com/lLrUEsB.png" alt="SilverAsh" title="SilverAsh">
+                                                <img src="https://i.imgur.com/lU4IgHh.png" alt="Exusiai" title="Exusiai">
+                                                <img src="https://i.imgur.com/kR9KIDj.png" alt="Eyjafjalla" title="Eyjafjalla">
+                                                <span class="more-count">+5</span>
+                                            </div>
+                                        </div>
+                                        <div class="tier-row tier-a">
+                                            <span class="tier-label">A Tier</span>
+                                            <div class="tier-operators">
+                                                <img src="https://i.imgur.com/VrFArwH.png" alt="Saria" title="Saria">
+                                                <img src="https://i.imgur.com/HVvX8E0.png" alt="Blaze" title="Blaze">
+                                                <span class="more-count">+12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="tier-list.html" class="card-link">View Full Tier List <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            
+                            <!-- Guides Preview -->
+                            <div class="featured-card featured-guide">
+                                <div class="card-header">
+                                    <h3 class="card-title">Latest Guide</h3>
+                                    <span class="card-badge">New</span>
+                                </div>
+                                <div class="card-content">
+                                    <h4>Il Siracusano Event Guide</h4>
+                                    <p>Complete walkthrough of the latest event, including stage strategies, reward farming, and boss tactics.</p>
+                                    <div class="guide-meta">
+                                        <span><i class="fas fa-clock"></i> 15 min read</span>
+                                        <span><i class="fas fa-user"></i> By Kal'tsit</span>
+                                    </div>
+                                    <ul class="guide-topics">
